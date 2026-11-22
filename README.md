@@ -60,7 +60,7 @@ solar-pf/
 │   ├── cashflows.py          # Step 3: revenue, opex, tax, CFADS    ✅
 │   ├── debt_sizing.py        # Step 4: size debt on DSCR            ✅
 │   ├── charts.py             # charts of cash flows                 ✅
-│   └── monte_carlo.py        # Step 5: P50 / P90 risk               ⬜
+│   └── monte_carlo.py        # Step 5: P50 / P90 risk (planned)     ⬜
 ├── data/raw/                 # downloaded data (not edited by hand)
 ├── data/processed/           # cleaned data
 └── outputs/                  # charts and result tables

@@ -1,0 +1,8 @@
+__pycache__/
+data/raw/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.venv/
+venv/
+notes/

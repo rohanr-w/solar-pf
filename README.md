@@ -34,7 +34,7 @@ how much can a bank safely lend, and how sensitive is that to a bad sunlight yea
 | All three together | RM80.6m | 70% |
 | Energy at 90% of expected | RM58.1m | 51% |
 
-### Key findings
+### What I learned
 - **Banks lend against cash flow, not cost.** Updating capex and tariff to 2025–26 Malaysian levels barely changed gearing (57% → 56%), because both fell by about 24%.
 - **DSCR is the biggest lender lever.** 1.30x → 1.20x raised debt by 8.3%, more than adding two years of tenor.
 - **Fixed costs amplify bad years.** A 10% drop in energy cut debt by about 10.5%, which is why lenders size on P90 rather than P50.

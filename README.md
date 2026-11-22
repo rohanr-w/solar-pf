@@ -1,5 +1,9 @@
 # Malaysia Solar Project Finance Model
 
+**Live app:** https://rohan-solar-pf.streamlit.app
+
+**Code:** https://github.com/rohanr-w/solar-pf
+
 A Python model of how a lender sizes debt for a utility-scale solar farm in Malaysia,
 using real historical sunlight data and public assumptions, with an interactive app.
 
@@ -59,7 +63,6 @@ solar-pf/
 │   └── monte_carlo.py        # Step 5: P50 / P90 risk               ⬜
 ├── data/raw/                 # downloaded data (not edited by hand)
 ├── data/processed/           # cleaned data
-├── notes/                    # written analysis
 └── outputs/                  # charts and result tables
 ```
 

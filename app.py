@@ -73,4 +73,23 @@ with st.expander("See the full debt schedule"):
     show["dscr"] = show["dscr"].round(2)
     st.dataframe(show, hide_index=True)
 
+with st.expander("Assumptions behind the model"):
+    st.markdown(f"""
+**Plant**
+- Capacity: {config.CAPACITY_MWP} MWp in {config.SITE_NAME}
+- Performance ratio: {config.PERFORMANCE_RATIO:.2f} (heat, inverter, cable and soiling losses)
+- Panel degradation: {config.DEGRADATION_PER_YEAR:.1%} a year, so output falls slightly every year
+- PPA: {config.PPA_YEARS} years with TNB at a fixed tariff
+
+**Costs and tax**
+- Opex: {config.OPEX_PCT_OF_CAPEX:.1%} of capex a year, rising {config.OPEX_INFLATION:.0%} a year
+- Corporate tax: {config.TAX_RATE:.0%} (interest deduction ignored, so CFADS is slightly conservative)
+
+**Base case (before sliders)**
+- Tariff RM{config.TARIFF_RM_PER_MWH}/MWh · Capex RM{config.CAPEX_RM_PER_MWP / 1e6:.1f}m per MWp
+- DSCR {config.DSCR_TARGET:.2f}x · Tenor {config.DEBT_TENOR_YEARS} years · Interest {config.INTEREST_RATE:.1%}
+
+**Not yet modelled:** construction period, reserve accounts, full P90 analysis.
+""")
+    
 st.caption("Hypothetical project using public assumptions (Energy Commission LSS tariffs, recent LSS EPCC contracts). Not investment advice.")
